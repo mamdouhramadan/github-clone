@@ -1,6 +1,7 @@
 import React from 'react';
 import './AppPanel.css';
 import { SampleData } from './../../Util/Data';
+import { NavLink } from 'react-router-dom';
 
 export default function AppPanel({ children }) {
     return (
@@ -11,11 +12,12 @@ export default function AppPanel({ children }) {
                     <div className="panel__navigation">
                         <ul className="list-unstyled m-0 d-flex">
                             <li className="list-item">
-                                <a href="#!" alt="" className="link-item active">Reprosetry</a>
+                                <NavLink activeClassName="selected" to="/">Reprosetry</NavLink>
                             </li>
                             <li className="list-item">
-                                <a href="#!" alt="" className="link-item">Developers</a>
+                                <NavLink activeClassName="selected" to="/developers">Developers</NavLink>
                             </li>
+
                         </ul>
                     </div>
                     {/* end panel__navigation */}

@@ -1,11 +1,13 @@
 import DeveloperScreen from "./DeveloperScreen";
 import AppTitle from "../Components/AppTitle";
 import AppPanel from "../Components/AppPanel";
+import { Routes, Route } from "react-router-dom";
+import HomeScreen from './HomeScreen/index';
 
 function App() {
   return (
     <div className="App">
-
+      
       {/* Start Home Header */}
       <AppTitle
         title="Trending"
@@ -16,7 +18,10 @@ function App() {
         <div className="container">
           <AppPanel>
             {/* <HomeScreen /> */}
-            <DeveloperScreen />
+            <Routes>
+              <Route exact path="/" element={<HomeScreen />} />
+              <Route exact path="/developers" element={<DeveloperScreen />} />
+            </Routes>
           </AppPanel>
         </div>
       </main>
