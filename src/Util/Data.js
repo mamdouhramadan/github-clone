@@ -1,7 +1,26 @@
+import DeveloperScreen from "../Screens/DeveloperScreen";
+import HomeScreen from "../Screens/HomeScreen";
+
 export const SampleData = {
+    pages: [
+        {
+            path: '/',
+            title: 'Reprosetry',
+            component: <HomeScreen />,
+            subtitle: 'see what the Github community is most excitd about today'
+        },
+        {
+            path: '/developers',
+            title: 'Developers',
+            component: <DeveloperScreen />,
+            subtitle: 'these are developers building the hot topics today'
+        },
+
+    ],
     filter: [
         {
             label: "Spoken Languages",
+            hideIn: '/developers',
             data: [
                 {
                     text: 'English',

@@ -3,7 +3,7 @@ import './AppPanel.css';
 import { SampleData } from './../../Util/Data';
 import { NavLink } from 'react-router-dom';
 
-export default function AppPanel({ children }) {
+export default function AppPanel({ currentPath, children }) {
     return (
         <div className="panel py-5">
             <div className="panel__header p-3">
@@ -11,12 +11,13 @@ export default function AppPanel({ children }) {
 
                     <div className="panel__navigation">
                         <ul className="list-unstyled m-0 d-flex">
-                            <li className="list-item">
-                                <NavLink activeClassName="selected" to="/">Reprosetry</NavLink>
-                            </li>
-                            <li className="list-item">
-                                <NavLink activeClassName="selected" to="/developers">Developers</NavLink>
-                            </li>
+                            {
+                                SampleData.pages.map((item, index) =>
+                                    <li className="list-item">
+                                        <NavLink activeClassName="selected" to={item.path}>{item.title}</NavLink>
+                                    </li>
+                                )
+                            }
 
                         </ul>
                     </div>
@@ -26,7 +27,8 @@ export default function AppPanel({ children }) {
                         {
                             SampleData.filter.map((item, index) => {
                                 return (
-                                    <div key={index} className="form-group m-0">
+                                    (item.hideIn !== currentPath) &&
+                                    <div key={index} className="form-group m-0" >
                                         <label>{item?.label}</label>
                                         <select className="form-control">
                                             {item?.data.map((item, index) =>
@@ -35,8 +37,10 @@ export default function AppPanel({ children }) {
                                         </select>
                                     </div>
                                 )
+
                             })
                         }
+
                     </div>
                     {/* end panel__filters */}
 
@@ -47,6 +51,6 @@ export default function AppPanel({ children }) {
 
             {children}
 
-        </div>
+        </div >
     )
 }

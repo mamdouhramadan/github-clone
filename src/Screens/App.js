@@ -1,26 +1,30 @@
-import DeveloperScreen from "./DeveloperScreen";
 import AppTitle from "../Components/AppTitle";
 import AppPanel from "../Components/AppPanel";
-import { Routes, Route } from "react-router-dom";
-import HomeScreen from './HomeScreen/index';
+import { Routes, Route, useLocation } from "react-router-dom";
+import { SampleData } from "../Util/Data";
+import { getSubtitle } from "../Util/Functions";
 
 function App() {
+  const { pathname } = useLocation();
+
   return (
     <div className="App">
-      
       {/* Start Home Header */}
       <AppTitle
         title="Trending"
-        subtitle="see what the Github community is most excitd about today"
+        subtitle={getSubtitle(pathname)}
       />
       {/* End Home Header */}
       <main>
         <div className="container">
-          <AppPanel>
+          <AppPanel currentPath={pathname}>
             {/* <HomeScreen /> */}
             <Routes>
-              <Route exact path="/" element={<HomeScreen />} />
-              <Route exact path="/developers" element={<DeveloperScreen />} />
+              {
+                SampleData.pages.map((item, index) =>
+                  <Route key={index} exact path={item.path} element={item.component} />
+                )
+              }
             </Routes>
           </AppPanel>
         </div>
