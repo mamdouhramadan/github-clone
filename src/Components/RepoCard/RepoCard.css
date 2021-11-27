@@ -1,0 +1,86 @@
+@import url(./../../Constants/colors.css);
+
+.repo__card {
+  margin-bottom: -2px;
+  border-width: 2px !important;
+  border-color: var(--lightDark) !important;
+}
+
+.repo__card .repo__title {
+  color: var(--themeColor);
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.repo__card .repo__title .icon {
+  color: var(--textColor) !important;
+}
+
+.repo__card .repo__content {
+  font-size: 14px;
+}
+
+.repo__card .repo__info {
+  margin-bottom: 0 !important;
+}
+
+.repo__card .repo__info .icon {
+  color: var(--textColor);
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  max-width: 20px;
+}
+
+.repo__card .repo__info > li {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.repo__card .repo__info .info__built {
+  display: flex;
+}
+
+.repo__card .repo__info .info__built ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 10px !important;
+}
+
+.repo__card .repo__info .info__built ul li {
+  margin: 0 10px 0 0;
+}
+
+.repo__card .repo__info .info__built ul img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.card__actions {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.card__actions .btn {
+  background-color: var(--lightDark) !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 10px;
+  min-width: 100px;
+}

@@ -1,0 +1,33 @@
+@import url(./Constants/colors.css);
+
+/* Start Global Style */
+body {
+  background-color: var(--darkColor);
+  color: var(--textColor);
+}
+
+.btn {
+  background-color: var(--lightDark) !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  padding: 10px 20px;
+  min-width: 100px;
+}
+
+.home__header {
+  border-color: var(--lightDark) !important;
+}
+
+.home__title {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.home__subtitle {
+  text-transform: capitalize;
+  font-size: 16px;
+}

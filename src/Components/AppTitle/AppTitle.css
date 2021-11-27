@@ -1,0 +1,14 @@
+.app__header {
+  border-color: var(--lightDark) !important;
+}
+
+.app__header .app__title {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.app__header .app__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: capitalize;
+}
