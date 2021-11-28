@@ -14,7 +14,7 @@ export default function DeveloperScreen({ date, language }) {
         githubTrends({ section: 'developers', since:  'monthly'})
             .then(result => {
                 setDevelopers(result)
-                console.log(result)
+               // console.log(result)
             })
             .catch(error => {
                 console.log('Error: ', error)
@@ -26,7 +26,7 @@ export default function DeveloperScreen({ date, language }) {
         <div className="developers__page">
             {
                 developers.length > 0 ?
-                    developers.map((deveeloper, index) => <DeveloperCard index={index+1} developer={deveeloper} />)
+                    developers.map((deveeloper, index) => <DeveloperCard key={index} index={index+1} developer={deveeloper} />)
                     : <Loader />
             }
 

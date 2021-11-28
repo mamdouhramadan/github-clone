@@ -13,8 +13,8 @@ export default function AppPanel({ currentPath, children }) {
                         <ul className="list-unstyled m-0 d-flex">
                             {
                                 SampleData.pages.map((item, index) =>
-                                    <li className="list-item">
-                                        <NavLink activeClassName="selected" to={item.path}>{item.title}</NavLink>
+                                    <li key={index} className="list-item">
+                                        <NavLink activeclassname="selected" to={item.path}>{item.title}</NavLink>
                                     </li>
                                 )
                             }

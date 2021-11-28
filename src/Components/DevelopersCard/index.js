@@ -38,7 +38,7 @@ export default function DeveloperCard({ developer, index }) {
                     </ul>
                 </div>
 
-                <div classNam="col-md-4 col-12 btns-group">
+                <div className="col-md-4 col-12 btns-group">
                     <button className="btn btn-primary"><i className="far fa-heart
  mr-2"></i>Favorite</button>
                     <button className="btn btn-primary">Follow</button>

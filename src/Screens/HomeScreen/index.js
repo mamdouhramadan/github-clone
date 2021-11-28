@@ -15,7 +15,7 @@ export default function HomeScreen() {
         githubTrends({ since: 'weekly' })
             .then(result => {
                 setRepositories(result)
-                console.log('result', result)
+                //console.log('result', result)
             })
             .catch(error => {
                 console.log('Error: ', error)
