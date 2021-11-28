@@ -84,3 +84,11 @@
   padding: 10px;
   min-width: 100px;
 }
+
+@media (max-width: 768px) {
+  .card__actions {
+    flex-direction: row;
+    margin: 15px auto 0px !important;
+    align-items: center;
+  }
+}

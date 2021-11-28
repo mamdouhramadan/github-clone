@@ -4,12 +4,15 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { SampleData } from "../Util/Data";
 import { getSubtitle } from "../Util/Functions";
 
+
 function App() {
   const { pathname } = useLocation();
 
   return (
     <div className="App">
+    
       {/* Start Home Header */}
+
       <AppTitle
         title="Trending"
         subtitle={getSubtitle(pathname)}

@@ -1,0 +1,9 @@
+.app__loader .border {
+  border-color: var(--lightDark) !important;
+  min-height: 200px;
+  border-width: 2px !important;
+  margin-bottom: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

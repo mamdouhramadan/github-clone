@@ -62,3 +62,31 @@
   background-color: var(--themeColor);
   color: var(--whiteColor);
 }
+
+@media (max-width: 768px) {
+  .panel__header {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .panel__header > .d-flex {
+    flex-direction: column;
+  }
+  .panel__header .form-group {
+    display: flex;
+    margin: 15px 0 0 !important;
+    justify-content: center;
+  }
+  .panel__header select{
+    max-width: 90px;
+  }
+
+
+
+  .panel__header label {
+    margin: 0 !important;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
