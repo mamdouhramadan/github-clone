@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/github-clone/static/css/main.6159a589.chunk.css",
+    "main.js": "/github-clone/static/js/main.252e7ad5.chunk.js",
+    "main.js.map": "/github-clone/static/js/main.252e7ad5.chunk.js.map",
+    "runtime-main.js": "/github-clone/static/js/runtime-main.988ce411.js",
+    "runtime-main.js.map": "/github-clone/static/js/runtime-main.988ce411.js.map",
+    "static/css/2.096dd1f6.chunk.css": "/github-clone/static/css/2.096dd1f6.chunk.css",
+    "static/js/2.5c371dff.chunk.js": "/github-clone/static/js/2.5c371dff.chunk.js",
+    "static/js/2.5c371dff.chunk.js.map": "/github-clone/static/js/2.5c371dff.chunk.js.map",
+    "index.html": "/github-clone/index.html",
+    "static/css/2.096dd1f6.chunk.css.map": "/github-clone/static/css/2.096dd1f6.chunk.css.map",
+    "static/css/main.6159a589.chunk.css.map": "/github-clone/static/css/main.6159a589.chunk.css.map",
+    "static/js/2.5c371dff.chunk.js.LICENSE.txt": "/github-clone/static/js/2.5c371dff.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/github-clone/static/media/arrow_right.f7c6ac6d.svg",
+    "static/media/all.min.css": "/github-clone/static/media/fa-solid-900.eeccf4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.988ce411.js",
+    "static/css/2.096dd1f6.chunk.css",
+    "static/js/2.5c371dff.chunk.js",
+    "static/css/main.6159a589.chunk.css",
+    "static/js/main.252e7ad5.chunk.js"
+  ]
+}
